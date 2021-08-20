@@ -18,7 +18,7 @@ public class ClienteController {
     @Autowired
     ClienteRepository clienteRepository;
 
-    @RequestMapping("/products")
+    @RequestMapping("/clientes")
     @ResponseBody
     public ResponseEntity<List<Cliente>> getAllItems(){
         List<Cliente> clientes =  clienteRepository.findAll();
